@@ -4,12 +4,12 @@ services:
     image: mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: restaurant_db
-      MYSQL_USER: mysql_usr
-      MYSQL_PASSWORD: mysql_pass
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
     ports:
-      - 3306:3306
+      - ${DB_PORT}:3306
     volumes:
       - "./mysql_data:/var/lib/mysql"
   adminer:
