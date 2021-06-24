@@ -11,7 +11,7 @@ services:
     ports:
       - ${DB_PORT}:3306
     volumes:
-      - "./mysql_data:/var/lib/mysql"
+      - "../mysql_data:/var/lib/mysql"
   adminer:
     image: adminer
     restart: always
