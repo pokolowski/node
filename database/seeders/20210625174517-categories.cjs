@@ -5,11 +5,19 @@ module.exports = {
     return queryInterface.bulkInsert('categories', [
       {
         id: 1,
-        name: 'dania'
+        name: 'dania glowne'
       },
       {
         id: 2,
-        name: 'deser'
+        name: 'desery'
+      },
+      {
+        id: 3,
+        name: 'pizza'
+      },
+      {
+        id: 4,
+        name: 'zimne napoje'
       },
     ]);
   },
